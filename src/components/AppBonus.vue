@@ -43,6 +43,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use './styles/generals.css';
+
 div{
     background-color: cyan;
     .container{

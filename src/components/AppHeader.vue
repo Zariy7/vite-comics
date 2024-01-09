@@ -34,6 +34,8 @@
 </template>
 
 <style lang="scss" scoped>
+@use './styles/generals.css';
+
 header{
     div{
         margin: 0 auto;
