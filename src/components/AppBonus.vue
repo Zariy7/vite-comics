@@ -60,8 +60,9 @@ div{
         align-items: center;
 
         img{
-            max-width: 50%;
-            max-height: 50%;
+            max-width: 75px;
+            max-height: 75px;
+            margin: 10px 0;
         }
     }
 }

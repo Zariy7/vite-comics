@@ -37,6 +37,7 @@
 
 <style lang="scss" scoped>
 @use '.././styles/generals.scss';
+@use '.././styles/partials/variables' as *;
 
 header{
     div{
@@ -63,12 +64,12 @@ header{
                 }
 
                 &.active{
-                    border-bottom: 3px solid blue;
+                    border-bottom: 3px solid $primary_color;
                 }
             }
 
             li:hover{
-                border-bottom: 3px solid blue;
+                border-bottom: 3px solid $primary_color;
             }
         }
     }
