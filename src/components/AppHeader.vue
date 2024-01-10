@@ -25,8 +25,10 @@
         <div>
             <img src=".././assets/img/dc-logo.png">
             <ul>
-                <li v-for="item, index in menu" :key="index">
-                    {{ item }}
+                <li v-for="item, index in menu" :key="index" :class="index == 1 ? 'active' : ''">
+                    <div>
+                        {{ item }}
+                    </div>
                 </li>
             </ul>
         </div>
@@ -52,10 +54,17 @@ header{
         ul{
             display: flex;
             list-style-type: none;
-            height: 100%;
             
             li{
-                margin: 50px 5px;
+                div{
+                    padding: 50px 0;
+                    margin: 0 5px;
+                    height: 100%;
+                }
+
+                &.active{
+                    border-bottom: 3px solid blue;
+                }
             }
 
             li:hover{
