@@ -34,9 +34,13 @@
 <template>
     <div>
         <div class="container">
-            <div v-for="option, index in options" :key="index">
-                <img :src="option.optionImage" :alt="option.optionString" class="optionImage">
-                {{ option.optionString }}
+            <div v-for="option, index in options" :key="index" class="container">
+                <div class="w-50">
+                    <img :src="option.optionImage" :alt="option.optionString">
+                </div>
+                <div class="w-50">
+                    {{ option.optionString }}
+                </div>
             </div>
         </div>
     </div>
@@ -55,15 +59,10 @@ div{
         justify-content: space-around;
         align-items: center;
 
-        div{
-            padding: 1rem 0;
-            width: calc(100% / 5 - 20px);
-            font-size: small;
+        img{
+            max-width: 50%;
+            max-height: 50%;
         }
     }
-}
-
-.optionImage{
-    width: 25%;
 }
 </style>
