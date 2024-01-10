@@ -1,6 +1,6 @@
 <script>
     export default {
-        name: 'AppBonus',
+        name: 'AppFooter',
         data(){
             return{
                 dcComics: [
@@ -42,7 +42,7 @@
 </script>
 
 <template>
-    <footer>
+    <footer class="bg-gray">
         <div class="dc-background">
             <div class="container">
                 <div>
@@ -127,17 +127,18 @@
 @use '.././styles/partials/variables' as *;
 
 footer{
-    background-color: rgb(59, 59, 59);
 
     .dc-background{
         background-image: url(".././assets/img/footer-bg.jpg");
         display: flex;
 
         .dc-logo-div{
-            height: 400px;
+            height: 350px;
             .dc-logo-bg{
-                max-height: 100%;
-                object-fit: contain;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                margin: 0px;
             }
         }
     }
