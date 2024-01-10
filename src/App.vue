@@ -16,6 +16,6 @@
 </template>
 
 <style lang="scss" scoped>
-@use './styles/generals.css';
+@use './styles/generals.scss';
 
 </style>

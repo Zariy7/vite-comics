@@ -43,10 +43,11 @@
 </template>
 
 <style lang="scss" scoped>
-@use './styles/generals.css';
+@use '.././styles/generals.scss';
+@use '.././styles/partials/variables' as *;
 
 div{
-    background-color: cyan;
+    background-color: $primary_color;
     .container{
         margin: 0 auto;
         max-width: 60%; 

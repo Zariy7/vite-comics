@@ -34,7 +34,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use './styles/generals.css';
+@use '.././styles/generals.scss';
 
 header{
     div{
@@ -52,6 +52,7 @@ header{
         ul{
             display: flex;
             list-style-type: none;
+            height: 100%;
             
             li{
                 margin: 50px 5px;
